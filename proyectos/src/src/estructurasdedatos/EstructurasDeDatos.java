@@ -5,6 +5,9 @@
  */
 package estructurasdedatos;
 
+import estructurasdedatos.cap1.complejidad.Ciclos;
+import estructurasdedatos.cap1.complejidad.Condicionales;
+
 /**
  *
  * @author tusk
@@ -15,7 +18,14 @@ public class EstructurasDeDatos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Ciclos tallciclos = new Ciclos();
+        
+        tallciclos.tallerciclos();
+        
+        //Condicionales tallcondicionales = new Condicionales();
+        
+        //tallcondicionales.tallercondicionales();
+    
     }
     
 }

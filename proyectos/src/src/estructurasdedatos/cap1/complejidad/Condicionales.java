@@ -26,7 +26,7 @@ public class Condicionales {
     System.out.println("Digite 1 y enter para ==> Que imprima la suma de todos los números pares que van del 1 al 100 y diga cuántos hay.");
     System.out.println("Digite 2 y enter para ==> Que pida dos números y muestre todos los números que van desde el primero al segundo. Se debe controlar que los valores son correctos.");
     System.out.println("Digite 3 y enter para ==> Que muestre los números del 1 al 100 en una tabla de 10x10.");
-    System.out.println("Digite 4 para salir.");
+    
     
     imprime = entrada.nextInt();
         

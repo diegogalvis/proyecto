@@ -22,9 +22,9 @@ public class EstructurasDeDatos {
         
         tallciclos.tallerciclos();
         
-        Condicionales tallcondicionales = new Condicionales();
+        //Condicionales tallcondicionales = new Condicionales();
         
-        tallcondicionales.tallercondicionales();
+        //tallcondicionales.tallercondicionales();
     
     }
     

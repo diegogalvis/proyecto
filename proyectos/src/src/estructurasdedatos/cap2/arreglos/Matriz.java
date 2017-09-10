@@ -5,7 +5,7 @@
  */
 package estructurasdedatos.cap2.arreglos;
 
-/* @author Diego Mauricio galvis*/
+/* @author Diego Mauricio Galvis Arboleda*/
 
 public class Matriz {
     

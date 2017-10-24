@@ -16,53 +16,38 @@ public class ColaPrioridad {
 
  
     public void hacercola(int cedula, int prioridad) {
-               if (prioridad == 0) {
-            //si la cola A es menor que la cola B 
-            if (colaA.tamaño() < colaB.tamaño()) {
-                //hara cola en A
-                this.colaA.encolar(cedula);
-                // de lo contrario 
-            } else {
-                //hara cola en B
+               if (prioridad == 0) {           
+            if (colaA.tamaño() < colaB.tamaño()) {               
+                this.colaA.encolar(cedula);               
+            } else {               
                 this.colaB.encolar(cedula);
             }
-        } else {
-            //verificamos que la prioridad ingresada sea 1 (si es prioridad)
-            if (prioridad ==1){
-                //hara cola en la fila prioridad
+        } else {            
+            if (prioridad ==1){              
             this.prioritaria.encolar(cedula);
              }
         }
     }
 
    
-    public void listar() {
-       //imprimimos en pantalla la cola A
-        System.out.println("cola A:");
-        //llamamos la funcion listar de la cola simple
+    public void listar() {    
+        System.out.println("cola A:");        
         colaA.listarr();
-        System.out.println("\n");
-         //imprimimos en pantalla la cola A
-        System.out.println("cola B");
-         //llamamos la funcion listar de la cola simple
+        System.out.println("\n");         
+        System.out.println("cola B");        
         colaB.listarr();
-        System.out.println("\n");
-         //imprimimos en pantalla la cola A
-        System.out.println("cola prioritaria");
-         //llamamos la funcion listar de la cola simple
+        System.out.println("\n");       
+        System.out.println("cola prioritaria");         
         prioritaria.listarr();
 
     }
 
-    public void atiende() {
-        
-        for (int i = 0; i <= prioritaria.tamaño(); i++) {
-           
+    public void atiende() {        
+        for (int i = 0; i <= prioritaria.tamaño(); i++) {           
             prioritaria.dejacola();
         }
      
-        if (prioritaria.tamaño() == 0) {
-           
+        if (prioritaria.tamaño() == 0) {           
             colaA.dejacola();
             colaB.dejacola();            
         }
